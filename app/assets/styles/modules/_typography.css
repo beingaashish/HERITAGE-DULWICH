@@ -1,0 +1,39 @@
+.section-heading {
+  position: relative;
+  &--main-dark {
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &--main-light {
+    color: #2e2e2d;
+  }
+
+  &--sub-dark {
+    font-size: 38px;
+    color: $darkGolden;
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 600;
+    position: relative;
+  }
+  .heading-decorator {
+    transform: translateX(0);
+    width: 20%;
+    &--floated-right {
+      width: 20%;
+      transform: translateX(100%);
+    }
+  }
+}
+
+.paragraph {
+  color: #c9c9c9;
+  line-height: 1.4;
+
+  &--dark {
+    color: #2e2e2d;
+  }
+}

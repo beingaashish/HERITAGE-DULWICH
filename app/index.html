@@ -3,11 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/styles.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js" defer></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
+    <script type="text/javascript" src="assets/scripts/vendors/slick.js" defer></script>
     <script src="bundled.js" defer></script>
     <title>Heritage</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+
+    <aside class="site-header">
+        <div class="site-header__logo">
+            <img src="assets/images/icons/logo.svg">
+        </div>
+        <div class="site-header__menu-bg">
+            <div class="site-header__menu-icon">
+                <div class="site-header__menu-icon__middle"></div>
+            </div>
+        </div>
+        <div class="site-header__menu-content">
+            <nav class="primary-nav bm-medium">
+                <ul>
+                    <li><a href="#home" id="home-link">Home</a></li>
+                    <li><a href="#about" id="about-link">About us</a></li>
+                    <li><a href="#menu" id="menu-link">Menu</a></li>
+                    <li><a href="#events" id="events-link">Events</a></li>
+                    <li><a href="#news" id="press-link">News</a></li>
+                    <li><a href="#contact" id="contanct-link">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="site-header__btn-container bm-medium">
+                <a href="#" class="btn btn--golden bm-small">Reservation</a>
+                <a href="#" class="btn btn--golden">Order Online</a>
+            </div>
+            <div class="site-header__quick-contacts bm-medium">
+                <div class="site-header__quick-contact bm-small">
+                    <img src="assets/images/icons/phone.svg" alt="" class="site-header__contact-icon"><span>020-8761-8207</span><span>020-8761-2031</span>
+                </div>
+                <div class="site-header__quick-contact">
+                    <img src="assets/images/icons/marker.svg" alt="" class="site-header__contact-icon"><span>101 Rosendale Road</span><span></span> Dulwich SE21 8EZ</span>
+                </div>
+            </div>
+            <div class="site-header__social">
+                <a href="#"><img class="site-header__social-icon" src="assets/images/icons/facebook.svg"></a>
+                <a href="#"><img class="site-header__social-icon" src="assets/images/icons/instagram.svg"></a>
+                <a href="#"><img class="site-header__social-icon" src="assets/images/icons/twitter.svg"></a>       
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <div class="large-hero" id="">
+            <div class="carousel">
+                <div class="carousel__elements">
+                  <div class="carousel__element">
+                      <img src="assets/images/banner-img-1.jpg" alt="image of food">
+                      <div class="carousel__element-content">
+                          <h2 class="large-hero__main-text">
+                            Welcome to
+                          </h2>
+                          <h2 class="large-hero__sub-text">
+                            Heritage Dulwich
+                            <img class="heading-decorator"" src="assets/images/header-decorator.png" alt="Heading decorator">
+                          </h2>
+                      </div>
+                  </div>
+                  <div class="carousel__element">
+                      <img src="assets/images/banner-img-2.jpg" alt="image of food">
+                      <div class="carousel__element-content">
+                        <h2 class="large-hero__main-text">
+                            Welcome to
+                          </h2>
+                          <h2 class="large-hero__sub-text">
+                            Heritage Dulwich
+                            <img class="heading-decorator"" src="assets/images/header-decorator.png" alt="Heading decorator">
+                          </h2>
+                    </div>
+                  </div>
+                  <div class="carousel__element">
+                      <img src="assets/images/banner-img-3.jpg" alt="image of food">
+                      <div class="carousel__element-content">
+                        <h2 class="large-hero__main-text">
+                            Welcome to
+                          </h2>
+                          <h2 class="large-hero__sub-text">
+                            Heritage Dulwich
+                            <img class="heading-decorator" src="assets/images/header-decorator.png" alt="Heading decorator">
+                          </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="page-section page-section--dark-pattern">
+            <div class="wrapper wrapper--medium">
+                <div class="row row--gutters">
+                    <div class="row__medium-8">
+                        <div class="section-heading">
+                            <h2 class="section-heading--main-dark">
+                                About
+                            </h2>
+                            <h2 class="section-heading--sub-dark">
+                                Heritage Dulwich
+                            </h2>
+                            <img class="heading-decorator--floated-right" src="assets/images/header-decorator.png" alt="Heading decorator">
+                        </div>
+                        <p class="paragraph">
+                            At Heritage, we put a contemporary spin on traditionally grounded recipes. Our menu, designed by Executive Chef Dayashankar Sharma, features both nostalgic authentic dishes passed down through the generations and unusual foods from lesser-known Indian regions and communities, all executed using the finest seasonal produce to ensure a refined and modern fine dining experience in the heart of Dulwich. 
+                        </p>
+                        <a href="#" class="btn btn--double-borders tm-medium">Read more</a>
+                    </div>
+                    <div class="row__medium-4">
+                        <div class="">
+                            <img src="assets/images/about-food.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-section page-section--light-pattern">
+            <div class="wrapper wrapper--medium">
+                <div class="row row--gutters">
+                    <div class="row__medium-4">
+                        <div class="">
+                            <img src="assets/images/executive-chef.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row__medium-8">
+                        <div class="section-heading">
+                            <h2 class="section-heading--main-">
+                                Executive Chef 
+                            </h2>
+                            <h2 class="section-heading--sub-dark">
+                                Dayashankar Sharma
+                            </h2>
+                            <img class="heading-decorator" src="assets/images/header-decorator.png" alt="Heading decorator">
+                        </div>
+                        <p class="paragraph paragraph--dark bm-small">
+                            With over 30 years of culinary experience Chef Dayashankar Sharma pairs traditional Indian cooking with contemporary ideas and techniques.</p>
+                        <p class="paragraph paragraph--dark">Growing up in the northern Indian state of Rajasthan, Sharma’s culinary interest began at home watching his mother cook. His love for cooking eventually tuned into career following a diploma in Hotel Management with Oberoi group of Hotel and Taj group of hotels. These large hotels are where he spends his next ten years developing a depth knowledge of country’s regional cuisines and becoming an incredibly skilled chef.
+                            Sharma arrived England in 2000 and went out to work at the renowned Tamarind Group which owns London’s many best known and Michelin Starred Indian Restaurants.
+                        </p>
+                        <a href="#" class="btn btn--dark-double-borders tm-medium">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-section page-section--illustration-image">
+            <div class="wrapper wrapper--medium">
+                <div class="row row--gutters">
+                    <div class="row__medium-6">
+                        <div class="menu">
+                            <ul class="menu__categories">
+                                <div class="section-heading bm-medium">
+                                    <h2 class="section-heading--sub-dark">
+                                        MENU
+                                    </h2>
+                                    <img class="heading-decorator" src="assets/images/header-decorator.png" alt="Heading decorator">
+                                </div>
+                                <li class="menu__category">
+                                    <a href="#" class="menu__category-link open-modal">Tasting Menu</a>
+                                    <span class="menu__sub-items">
+                                        Heritage Tasting  Menu, Group dining Menu
+                                    </span>
+                                </li>
+                                <li class="menu__category">
+                                    <a href="#" class="menu__category-link open-modal">A L Carte</a>
+                                    <span class="menu__sub-items">
+                                        Heritage Tasting  Menu, Group dining Menu
+                                    </span>
+                                </li>
+                                <li class="menu__category">
+                                    <a href="#" class="menu__category-link open-modal">Lunch</a>
+                                    <span class="menu__sub-items">
+                                        Heritage Tasting  Menu, Group dining Menu
+                                    </span>
+                                </li>
+                                <li class="menu__category">
+                                    <a href="#" class="menu__category-link open-modal">Take Away</a>
+                                    <span class="menu__sub-items">
+                                        Heritage Tasting  Menu, Group dining Menu
+                                    </span>
+                                </li>
+                                <li class="menu__category">
+                                    <a href="#" class="menu__category-link open-modal">Dessert</a>
+                                    <span class="menu__sub-items">
+                                        Heritage Tasting  Menu, Group dining Menu, Heritage Tasting  Menu
+                                    </span>
+                                </li>
+                                <li class="menu__category">
+                                    <a href="#" class="menu__category-link open-modal">Wine</a>
+                                    <span class="menu__sub-items">
+                                        Heritage Tasting  Menu, Group dining Menu
+                                    </span>
+                                </li>
+                                <li class="menu__category">
+                                    <a href="#" class="menu__category-link open-modal">Cocktails</a>
+                                    <span class="menu__sub-items">
+                                        Heritage Tasting  Menu, Group dining Menu, Heritage Tasting  Menu
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row__medium-6">
+                        <div class="image-slider">
+                            <img class="image-slider__img" src="assets/images/menu-img-3.jpg" alt="Food image">
+                            <img class="image-slider__img" src="assets/images/menu-img-2.jpg" alt="Food image">
+                            <img class="image-slider__img" src="assets/images/menu-img-1.jpg" alt="Indian Food image">
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="modal">
+        <div class="modal__inner">
+        <h2>Menu Clicked Category</h2>
+        <div class="wrapper wrapper--medium">
+            <img class="modal__menu-img" src="assets/images/Screenshot 2021-01-30 at 23.21.54.jpg" alt="">
+        </div>
+        </div>
+        <div class="modal__close">╳</div>
+    </div>
 </body>
 </html>

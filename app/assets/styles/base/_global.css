@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #2e2e2d;
+  position: relative;
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  margin-left: 0;
+
+  @mixin atMedium {
+    margin-left: 250px;
+  }
+
+  @mixin atLarge {
+    margin-left: 300px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}

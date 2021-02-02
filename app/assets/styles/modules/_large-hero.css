@@ -1,0 +1,26 @@
+.large-hero {
+  height: 95vh;
+  width: 100%;
+
+  &__main-text {
+    font-size: 23px;
+    color: #fff;
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__sub-text {
+    font-size: 48px;
+    color: $darkGolden;
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 600;
+    position: relative;
+
+    .heading-decorator {
+      width: 30%;
+      position: relative;
+      left: 50%;
+    }
+  }
+}

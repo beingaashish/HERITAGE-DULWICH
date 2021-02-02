@@ -1,0 +1,33 @@
+.carousel {
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  &__elements {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  &__element {
+    height: 95vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__element-content {
+    background-color: rgba($darkBrown, 0.9);
+    padding: 20px 30px 20px 20px;
+    position: absolute;
+    right: 0;
+    top: 60%;
+    border-bottom: solid 3px $darkGolden;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

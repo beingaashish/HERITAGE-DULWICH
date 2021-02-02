@@ -1,0 +1,26 @@
+.btn {
+  display: inline-block;
+  padding: 7px 25px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 600;
+  min-width: 163px;
+
+  &--golden {
+    border: solid 2px $lightGolden;
+    background-color: $darkGolden;
+  }
+
+  &--double-borders {
+    border: double 7px $lightGolden;
+    background-color: $darkGolden;
+  }
+
+  &--dark-double-borders {
+    border: double 7px #fafafa;
+    background-color: $darkBrown;
+  }
+}

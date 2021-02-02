@@ -1,0 +1,22 @@
+.primary-nav {
+  li {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  a {
+    font-size: 16px;
+    color: $lightGolden;
+    text-transform: uppercase;
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-bottom: 1px solid transparent;
+
+    &:hover,
+    &:active {
+      border-bottom: 1px solid $lightGolden;
+    }
+  }
+}

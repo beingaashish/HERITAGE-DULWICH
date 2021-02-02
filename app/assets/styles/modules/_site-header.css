@@ -1,0 +1,163 @@
+.site-header {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  text-align: center;
+  z-index: 6;
+  transition: all 0.1s ease-out;
+
+  @mixin atMedium {
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 250px;
+    background-color: $darkBrown;
+  }
+
+  @mixin atLarge {
+    width: 300px;
+  }
+
+  &--is-expanded {
+    height: 100vh;
+    background-color: $darkBrown;
+  }
+
+  &__logo {
+    img {
+      padding: 20px;
+      height: 140px;
+      background-color: $darkBrown;
+    }
+  }
+
+  &__menu-content {
+    margin: 0 auto;
+    opacity: 0;
+    width: 70%;
+    transition: all 0.5s ease-out;
+    z-index: 0;
+    &--is-visible {
+      opacity: 1;
+      z-index: 6;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @mixin atMedium {
+      opacity: 1;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__menu-bg {
+    position: absolute;
+    background: rgba($darkBrown, 0.3);
+    top: 0;
+    left: 0;
+
+    height: 40px;
+    width: 100%;
+  }
+
+  &__menu-icon {
+    width: 20px;
+    height: 19px;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    right: 10px;
+    @mixin atMedium {
+      display: none;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      background-color: $lightGolden;
+      height: 3px;
+      transform-origin: 0 0;
+      transition: transform 0.3 ease-out;
+    }
+
+    &__middle {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 20px;
+      background-color: $lightGolden;
+      height: 3px;
+      transition: all 0.3s ease-out;
+      transform-origin: 0 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 20px;
+      background-color: $lightGolden;
+      height: 3px;
+      transform-origin: 0 100%;
+      transition: transform 0.3s ease-out;
+    }
+  }
+
+  &__menu-icon--close-x {
+    &::before {
+      transform: rotate(45deg) scaleX(1.25);
+    }
+
+    .site-header__menu-icon__middle {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+
+    &::after {
+      transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+    }
+  }
+
+  &__btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__quick-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__quick-contact {
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 600;
+    color: $lightGolden;
+    position: relative;
+    padding-left: 20px;
+    font-size: 14px;
+
+    span {
+      display: block;
+    }
+  }
+
+  &__contact-icon {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    height: 13px;
+  }
+
+  &__social-icon {
+    height: 18px;
+    margin-right: 10px;
+  }
+}

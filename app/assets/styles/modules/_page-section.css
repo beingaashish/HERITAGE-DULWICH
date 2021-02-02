@@ -1,0 +1,18 @@
+.page-section {
+  padding: 70px 0;
+  position: relative;
+
+  &--dark-pattern {
+    background: url('assets/images/about-bg.jpg') top center no-repeat;
+    background-size: cover;
+  }
+
+  &--light-pattern {
+    background: url('assets/images/chef-bg.jpg') top center no-repeat;
+    background-size: cover;
+  }
+
+  &--illustration-image {
+    background: url('assets/images/menu-bg.jpg') top center no-repeat;
+  }
+}
