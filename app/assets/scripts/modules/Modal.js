@@ -3,6 +3,7 @@ class Modal{
         this.openModalButtons = document.querySelectorAll('.open-modal');
         this.closeIcon = document.querySelector('.modal__close');
         this.modal = document.querySelector('.modal');
+        this.modalMenuCategory = document.querySelector('.modal__menu-category');
         this.events();
     }
 
@@ -11,16 +12,18 @@ class Modal{
         this.openModalButtons.forEach(el => el.addEventListener('click', e => {
             this.openTheModal(e);
             //use this menu category to add name of the category dynamically meaning to extract the element that was clicked
-            this.menuCategory = e.target.innerText;
-            console.log(this.menuCategory);
-        }
-            ));
+            this.updateModalMenuTitle(e.target.innerText);
+        }));
 
         //listen for close click in our case the close button
         this.closeIcon.addEventListener('click', () => this.closeTheModal())
 
         //listen for escape key to close the modal
         document.addEventListener('keyup', e => this.keyPressHandler(e))
+    }
+
+    updateModalMenuTitle(str){
+        this.modalMenuCategory.innerText = str;
     }
 
     keyPressHandler(e){

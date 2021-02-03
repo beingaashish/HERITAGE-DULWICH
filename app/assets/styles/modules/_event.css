@@ -1,0 +1,23 @@
+.event {
+  padding: 0 7px;
+  &__image-container {
+    overflow: hidden;
+  }
+  &__image {
+    object-fit: cover;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 28px;
+  }
+  &__date {
+    color: $darkGolden;
+    display: block;
+    img {
+      display: inline;
+      vertical-align: middle;
+      height: 15px;
+      margin-right: 5px;
+    }
+  }
+}

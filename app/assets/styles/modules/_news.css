@@ -1,0 +1,20 @@
+.news {
+  &__item {
+    padding: 0 7px;
+  }
+  &__image-container {
+    overflow: hidden;
+  }
+  &__image {
+    object-fit: cover;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 28px;
+    color: $darkGolden;
+  }
+  &__excerpt {
+    line-height: 1.6;
+    color: #fff;
+  }
+}

@@ -17,5 +17,7 @@
 @import 'modules/_menu.css';
 @import 'modules/_image-slider.css';
 @import 'modules/_modal.css';
+@import 'modules/_event.css';
+@import 'modules/_news.css';
 
 @import 'vendor/slick-theme.css';
