@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles/styles.css">
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js" defer></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
     <script type="text/javascript" src="assets/scripts/vendors/slick.js" defer></script>
@@ -12,7 +11,7 @@
     <title>Heritage</title>
 </head>
 <body>
-
+    <! -- Site Menu --> 
     <aside class="site-header">
         <div class="site-header__logo">
             <img src="assets/images/icons/logo.svg">
@@ -30,7 +29,7 @@
                     <li><a href="#menu" id="menu-link">Menu</a></li>
                     <li><a href="#events" id="events-link">Events</a></li>
                     <li><a href="#news" id="press-link">News</a></li>
-                    <li><a href="#contact" id="contanct-link">Contact us</a></li>
+                    <li><a href="contactus.html" id="contanct-link">Contact us</a></li>
                 </ul>
             </nav>
             <div class="site-header__btn-container bm-medium">
@@ -54,7 +53,8 @@
     </aside>
 
     <main>
-        <div class="large-hero" id="">
+        <! -- Section Hero --> 
+        <div class="large-hero" id="home">
             <div class="carousel">
                 <div class="carousel__elements">
                   <div class="carousel__element">
@@ -96,11 +96,11 @@
                 </div>
               </div>
         </div>
-
-        <div class="page-section page-section--dark-pattern">
+        <! -- Section About --> 
+        <div class="page-section page-section--dark-pattern" id="about">
             <div class="wrapper wrapper--medium">
                 <div class="row row--gutters">
-                    <div class="row__medium-8">
+                    <div class="row__medium-8 bm--unitl-medium">
                         <div class="section-heading">
                             <h2 class="section-heading--main-dark">
                                 About
@@ -123,7 +123,7 @@
                 </div>
             </div>
         </div>
-
+        <! -- About Chef --> 
         <div class="page-section page-section--light-pattern">
             <div class="wrapper wrapper--medium">
                 <div class="row row--gutters">
@@ -147,16 +147,16 @@
                         <p class="paragraph paragraph--dark">Growing up in the northern Indian state of Rajasthan, Sharma’s culinary interest began at home watching his mother cook. His love for cooking eventually tuned into career following a diploma in Hotel Management with Oberoi group of Hotel and Taj group of hotels. These large hotels are where he spends his next ten years developing a depth knowledge of country’s regional cuisines and becoming an incredibly skilled chef.
                             Sharma arrived England in 2000 and went out to work at the renowned Tamarind Group which owns London’s many best known and Michelin Starred Indian Restaurants.
                         </p>
-                        <a href="#" class="btn btn--dark-double-borders tm-medium">Read more</a>
+                        <a href="page-chef.html" class="btn btn--dark-double-borders tm-medium">Read more</a>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="page-section page-section--illustration-image">
+        <! -- Menu Section --> 
+        <div class="page-section page-section--illustration-image" id="menu">
             <div class="wrapper wrapper--medium">
                 <div class="row row--gutters">
-                    <div class="row__medium-6">
+                    <div class="row__medium-6 bm--unitl-medium">
                         <div class="menu">
                             <ul class="menu__categories">
                                 <div class="section-heading bm-medium">
@@ -220,8 +220,8 @@
                 </div>
             </div>
         </div>
-
-        <div class="page-section page-section--light-pattern">
+        <! -- Events Section --> 
+        <div class="page-section page-section--light-pattern" id="events">
             <div class="wrapper wrapper--medium">
                 <div class="section-heading">
                     <h2 class="section-heading--main-">
@@ -284,8 +284,8 @@
                 </div>
             </div>
         </div>
-
-        <div class="page-section page-section--dark-pattern">
+        <! -- News Section --> 
+        <div class="page-section page-section--dark-pattern" id="news">
             <div class="wrapper wrapper--medium">
                 <div class="section-heading">
                     <h2 class="section-heading--sub-dark">
@@ -334,7 +334,128 @@
                 </div>
             </div>
         </div>
+        <! -- Table Booking Section --> 
+        <div class="page-section page-section--food-image">
+            <div class="wrapper wrapper--narrow">
+                <div class="book">
+                    <div class="book__form">
+                        <div class="section-heading">
+                            <h2 class="section-heading--sub-dark txt-center">
+                                Book a Table
+                            </h2>
+                            <img class="heading-decorator--center" src="assets/images/header-decorator.png" alt="Heading decorator">
+                        </div>
+                        <form action="#" class="form tm-medium">
+                            <div class="form__group">
+                                <input type="text" id="name" class="form__input" placeholder="Full Name" required>
+                                <label for="name" class="form__label">Full name</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="email" id="email" class="form__input" placeholder="Email address" required>
+                                <label for="email" class="form__label">Email address</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="number" id="phone" class="form__input" placeholder="Phone Number" required>
+                                <label for="phone" class="form__label">Phone Number</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="date" id="date" class="form__input" placeholder="Date" required>
+                                <label for="date" class="form__label">Reservation Date</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="number" id="persons" class="form__input" placeholder="No of Individuals" required>
+                                <label for="persons" class="form__label">No of Individuals</label>
+                            </div>
+                            <div class="form__group">
+                                <textarea name="special-request" id="messaeg" rows="3">Special Request</textarea>
+                            </div>
+                            <div class="form__group">
+                                <button class="btn btn--double-borders tm-medium">Book Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <! -- Location section --> 
+        <div class="page-section page-section--light-pattern">
+            <div class="wrapper wrapper--medium">
+                <div class="section-heading bm-medium">
+                    <h2 class="section-heading--main-">
+                        Our
+                    </h2>
+                    <h2 class="section-heading--sub-dark">
+                        Location
+                    </h2>
+                    <img class="heading-decorator" src="assets/images/header-decorator.png" alt="Heading decorator">
+                </div>
+                <div class="row row--gutters">
+                    <div class="row__medium-6">
+                        <div class="map">
+                            <img src="assets/images/map.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row__medium-6">
+                        <div class="opening-details bm-large">
+                            <h2 class="opening-details__title">
+                                Opening Hours
+                            </h2>
+                            <p class="opening-details__content">
+                                In line with current government legislation, Heritage Dulwich is currently closed for dining in. To enjoy Heritage Dulwich from home, order a Home Dining, Please click order online.
+                            </p>
+                        </div>
+                        <div class="delivery-hours">
+                            <div class="delivery-hours__content">
+                                <div class="site-header__logo">
+                                    <img src="assets/images/icons/logo.svg">
+                                </div>
+                                <h2 class="delivery-hours__title bm-medium">Delivery Hours</h2>
+                                <time class="delivery-hours__time">
+                                    Wednesday - Friday 5pm - 9pm
+                                </time>
+                                <time class="delivery-hours__time bm-medium">
+                                    Saturday - Sunday 1pm - 9pm
+                                </time>
+                                <p class="delivery-hours__quick-contacts">
+                                    Email: info@heritagedulwich.co.uk
+                                </p>
+                                <p class="delivery-hours__quick-contacts bm-medium">
+                                    Phone: 020 8761 8207, 020 8761 2031
+                                </p>
+                                <div class="site-header__social tm-medium">
+                                    <a href="#"><img class="site-header__social-icon" src="assets/images/icons/facebook.svg"></a>
+                                    <a href="#"><img class="site-header__social-icon" src="assets/images/icons/instagram.svg"></a>
+                                    <a href="#"><img class="site-header__social-icon" src="assets/images/icons/twitter.svg"></a>       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <! -- Page Footer --> 
+        <footer class="footer">
+            <div class="wrapper wrapper--medium">
+                <ul class="footer__items">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Home</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Careers</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Gift Vouchers</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+    
+        </footer>
     </main>
+
+    <! -- Modal for Menu List --> 
     <div class="modal">
         <div class="modal__inner">
         <h2 class="modal__menu-category"></h2>
@@ -343,6 +464,24 @@
         </div>
         </div>
         <div class="modal__close">╳</div>
+    </div>
+    <! -- Backdrop message on page load --> 
+    <div class="backdrop-message backdrop-message--is-visible">
+        <div class="backdrop-message__content">
+            <h3 class="backdrom-message__title">Heritage Dulwich</h3>
+            <p class="backdrop-message__description tm-medium">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, praesentium laborum placeat numquam eveniet ratione est saepe vel nobis, voluptates porro ab, repellendus fuga! Vitae adipisci neque minima facere officia.
+            </p>
+            <a href="#" class="btn btn--double-borders tm-medium">Read more</a>
+            <div class="backdrop-message__close">╳</div>
+        </div>
+    </div>
+    <! -- Cookies Message --> 
+    <div class="cookies-message">
+        <div class="cookies-message__content">
+            <p class="cookies-message__text">This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our privacy policy.</p>
+            <a href="#" class="btn btn--dark-double-borders">Accept &amp; Close</a>
+        </div>
     </div>
 </body>
 </html>

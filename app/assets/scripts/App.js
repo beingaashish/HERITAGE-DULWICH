@@ -1,6 +1,7 @@
 import '../styles/styles.css';
 import MobileMenu from './modules/MobileMenu';
 import Modal from './modules/Modal';
+import Backdrop from './modules/Backdrop';
 
 if(module.hot){
     module.hot.accept()
@@ -9,6 +10,7 @@ if(module.hot){
 
 let mobileMenu = new MobileMenu();
 let modal = new Modal();
+let backdrop = new Backdrop();
 
 $(document).ready(function(){
     $('.carousel__elements').slick();

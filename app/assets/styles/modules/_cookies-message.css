@@ -1,0 +1,26 @@
+.cookies-message {
+  position: fixed;
+  bottom: 10px;
+  left: 1%;
+  border: solid 1px $lightGolden;
+  padding: 10px;
+  background-color: $darkGolden;
+  width: 98%;
+  z-index: 22;
+  display: none;
+
+  &__content {
+    border: solid 1px $lightGolden;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 700;
+    padding-right: 1.5em;
+    color: #fff;
+  }
+}

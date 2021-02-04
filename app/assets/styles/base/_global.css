@@ -32,6 +32,7 @@ main {
   margin-left: 0;
 
   @mixin atMedium {
+    transform: translateY(0);
     margin-left: 250px;
   }
 

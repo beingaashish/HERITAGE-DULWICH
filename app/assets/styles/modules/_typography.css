@@ -1,11 +1,15 @@
 .section-heading {
   position: relative;
   &--main-dark {
-    font-size: 24px;
+    font-size: 22px;
     color: #fff;
     font-family: 'Abhaya Libre', serif;
     font-weight: 400;
     text-transform: uppercase;
+
+    @mixin atMedium {
+      font-size: 24px;
+    }
   }
 
   &--main-light {
@@ -13,11 +17,14 @@
   }
 
   &--sub-dark {
-    font-size: 38px;
+    font-size: 30px;
     color: $darkGolden;
     font-family: 'Abhaya Libre', serif;
     font-weight: 600;
     position: relative;
+    @mixin atMedium {
+      font-size: 38px;
+    }
   }
   .heading-decorator {
     transform: translateX(0);
@@ -25,6 +32,12 @@
     &--floated-right {
       width: 15%;
       transform: translateX(100%);
+    }
+    &--center {
+      transform: translateX(-50%);
+      width: 130px;
+      left: 50%;
+      position: relative;
     }
   }
 }

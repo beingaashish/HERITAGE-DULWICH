@@ -19,5 +19,14 @@
 @import 'modules/_modal.css';
 @import 'modules/_event.css';
 @import 'modules/_news.css';
+@import 'modules/_form.css';
+@import 'modules/_book.css';
+@import 'modules/_opening-details.css';
+@import 'modules/_delivery-hours.css';
+@import 'modules/_footer.css';
+@import 'modules/_feedback.css';
+@import 'modules/_page-banner.css';
+@import 'modules/_backdrop-message.css';
+@import 'modules/_cookies-message.css';
 
 @import 'vendor/slick-theme.css';

@@ -13,10 +13,16 @@
   &__category {
     display: block;
     text-align: center;
-    padding: 15px 30px;
-    margin-bottom: 10px;
-    min-height: 75px;
+    padding: 5px 20px;
+    margin-bottom: 8px;
+    min-height: 78px;
     position: relative;
+
+    @mixin atMedium {
+      padding: 15px 30px;
+      margin-bottom: 10px;
+      min-height: 75px;
+    }
 
     &::before {
       position: absolute;
@@ -38,7 +44,14 @@
     display: block;
     text-align: center;
     color: $darkGolden;
-    font-size: 28px;
+    font-size: 20px;
+
+    @mixin atMedium {
+      display: block;
+      text-align: center;
+      color: #c09340;
+      font-size: 28px;
+    }
   }
 
   &__sub-items {

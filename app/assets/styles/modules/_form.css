@@ -1,0 +1,48 @@
+.form__group:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form__input,
+textarea {
+  font-size: 20px;
+  font-family: inherit;
+  padding: 10px 15px;
+  border-radius: 2px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $darkGolden;
+  width: 100%;
+  display: block;
+  color: $lightGolden;
+}
+.form__input:focus {
+  outline: none;
+  border-bottom: 1px solid $lightGolden;
+  transition: all 0.3s ease-out;
+}
+.form__input::-webkit__input-placeholder,
+textarea {
+  color: $darkGolden;
+}
+.form__input:focus:invalid {
+  border-bottom: solid 1px #ff7730;
+}
+
+.form__label {
+  font-size: 13pxrem;
+  font-weight: 500;
+  margin-left: 15px;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s ease-out;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+::-webkit-calendar-picker-indicator {
+  opacity: 0.6;
+  filter: invert(0.4);
+}

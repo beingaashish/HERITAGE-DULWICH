@@ -8,6 +8,13 @@
 
   &--medium {
     max-width: 960px;
+    @mixin atLarge {
+      max-width: 1020px;
+    }
+  }
+
+  &--narrow {
+    max-width: 720px;
   }
 
   .wrapper {

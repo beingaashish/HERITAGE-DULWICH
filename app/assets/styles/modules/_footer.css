@@ -1,0 +1,28 @@
+.footer {
+  background: url('assets/images/about-bg.jpg') top center no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+  &__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @mixin atMedium {
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    margin-right: 0px;
+    margin-bottom: 7px;
+    @mixin atMedium {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    color: #fff;
+  }
+}

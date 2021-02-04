@@ -6,10 +6,25 @@
   margin-bottom: 25px;
 }
 
+.bm-large {
+  margin-bottom: 45px;
+}
+
 .tm-medium {
   margin-top: 25px;
 }
 
 .tm-small {
   margin-top: 10px;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.bm--unitl-medium {
+  margin-bottom: 20px;
+  @mixin atMedium {
+    margin-bottom: 0;
+  }
 }

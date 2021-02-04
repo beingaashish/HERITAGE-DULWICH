@@ -1,0 +1,20 @@
+.page-banner {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url('assets/images/chef-page-banner.jpg') top center no-repeat;
+  background-size: cover;
+  padding: 180px 0 30px 0;
+
+  @mixin atMedium {
+    padding: 60px 0;
+  }
+
+  &--dark-bg {
+    background: url('assets/images/about-bg.jpg') top center no-repeat;
+    background-size: cover;
+    background-size: cover;
+    padding: 180px 0 30px 0;
+    @mixin atMedium {
+      padding: 60px 0;
+    }
+  }
+}

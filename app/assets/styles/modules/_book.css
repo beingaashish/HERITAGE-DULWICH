@@ -1,0 +1,13 @@
+.book {
+  background-color: $darkBrown;
+  padding: 10px;
+
+  &__form {
+    border: solid 1px $darkGolden;
+    padding: 5px;
+    margin: 0 auto;
+    @mixin atMedium {
+      padding: 60px;
+    }
+  }
+}
